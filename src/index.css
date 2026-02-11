@@ -1,0 +1,95 @@
+/* index.css */
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  /* Matches Bootstrap's bg-light */
+  background-color: #f8f9fa; 
+  color: #212529;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Ensure React root fills the entire width for that 'Full Scale' look */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Analytics & Dashboard Cards --- */
+
+.bg-info-light {
+    background-color: rgba(13, 202, 240, 0.1);
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+}
+
+/* --- Maintenance Progress Bars --- */
+
+.progress {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Animation for the progress bars when they appear */
+.progress-bar {
+    transition: width 0.6s ease;
+}
+
+/* --- Table Enhancements --- */
+
+.table thead th {
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #f8f9fa;
+}
+
+.font-monospace {
+    font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
+/* --- Animations & Utilities --- */
+
+.animate-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+/* Standardizing link and badge behavior */
+a {
+  font-weight: 500;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
